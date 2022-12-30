@@ -1,0 +1,53 @@
+.packageCard {
+
+}
+
+.cardHeader{
+display: grid;
+grid-template-columns: 1fr 3fr;
+min-height:fit-content;
+
+}
+
+.restaurantName{
+  /* padding-left: 0.2rem; */
+}
+
+#packageDescription{
+  margin-top: 10px;
+  font-size: 20px;
+  color: #F5F5F5;
+}
+
+#packageContent{
+  color: #F5F5F5;
+}
+
+#itemContent{
+  background-color: var(--ion-item-background);
+  color: #F5F5F5;
+  font-size: 15px;
+  animation-name: animatetop;
+  animation-duration: 1s
+}
+
+.itemButtonGrid{
+display: grid;
+grid-template-columns: 1fr 1fr;
+padding-top: 1rem;
+} 
+
+#closeButton{
+  background-color: var(--ion-color-danger);
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:0px; opacity:0} 
+  to {top:0px; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:0px; opacity:0}
+  to {top:0px; opacity:1}
+}

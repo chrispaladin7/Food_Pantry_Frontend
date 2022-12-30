@@ -1,0 +1,37 @@
+  /****************** Search ******************/
+  .search-row {
+      width: 100%;
+      justify-content: center;
+      padding-top: 1rem;
+  }
+
+  .search-container {
+      width: 90%;
+      justify-content: center;
+  }
+
+  .search {
+      padding: 10px;
+      font-size: 1rem;
+      width: 100%;
+      min-width: 200px;
+      max-width: 500px;
+      display: block;
+      margin: 0 auto;
+  }
+
+  .check-box-search-container {
+      /* display: flex;
+      flex-direction: row;
+      justify-content: space-between; */
+      display: inline-block;
+      min-width: 100%;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .check-box-search {
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }

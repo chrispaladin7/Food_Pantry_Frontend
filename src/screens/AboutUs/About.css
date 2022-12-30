@@ -1,0 +1,43 @@
+section {
+  color: var(--ion-color-light);
+  position: relative;
+  /* display: flex; */
+  flex-direction: column;
+  min-height: 350px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.spacer {
+  /* position: absolute; */
+  aspect-ratio: 960/100;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* transform: translate(0, -20%); */
+}
+
+.layer1 {
+  background-image: url('../../../public/assets/about/layered-waves-haikei.svg');
+}
+
+.layer2 {
+  background-image: url('../../../public/assets/about/layered-waves-haikei_reverse.svg');
+}
+
+.z_up {
+  z-index: 2;
+}
+
+.color_2 {
+  background-color: #da5107;
+}
+
+.flip {
+  transform: rotate(180deg);
+}
+
+p {
+  padding: 1rem;
+}

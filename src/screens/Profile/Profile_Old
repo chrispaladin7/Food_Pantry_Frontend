@@ -1,0 +1,80 @@
+import { IonPage, IonText, IonTitle } from '@ionic/react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import Menu from '../../components/menu/Menu';
+import TabNavigationBottom from '../../components/TabNavigationBottom';
+import { getCurrentUser } from '../../services/auth.service';
+import { getReceiver } from '../../services/receiver.service';
+
+import './Profile.css';
+
+const Profile: React.FC = () => {
+  const currentUser = getCurrentUser();
+
+  const [userdata, setData] = useState<any>({ hits: [] });
+
+  // Simple but it works can be moved to cetral control place use a state management lib
+  // Redux Saga
+  useEffect(() => {
+    // Create an scoped async function in the hook
+    async function anyNameFunction() {
+      const receiver = await getReceiver();
+      setData(receiver.data);
+    }
+
+    // Execute the created function directly
+    if (currentUser.roles) {
+      anyNameFunction();
+    }
+  }, []);
+
+  return (
+    <IonPage>
+      <Menu></Menu>
+
+      <div className="container_prolife">
+        <IonText>
+          <strong>{currentUser.email}</strong>
+        </IonText>
+        <IonText>
+          <strong>Token:</strong> {currentUser.accessToken.substring(0, 20)} ...{' '}
+          {currentUser.accessToken.substr(currentUser.accessToken.length - 20)}
+        </IonText>
+        <IonText>
+          <strong>Id:</strong> {currentUser.id}
+        </IonText>
+        <IonText>
+          <strong>Email:</strong> {currentUser.email}
+        </IonText>
+        <IonText>
+          <strong>Authorities:</strong>
+          <ul>
+            {currentUser.roles &&
+              currentUser.roles.map((role: string, index: number) => (
+                <li key={index}>{role}</li>
+              ))}
+          </ul>
+        </IonText>
+        <IonText>
+          <strong>User Data:</strong>
+          <ul>
+            <IonText>
+              {userdata && (
+                <ul>
+                  <strong>Food Preferences and Restrictions:</strong>
+                  {Object.keys(userdata).map((key: any) => (
+                    <li key={key}>{key + ': ' + userdata[key]}</li>
+                  ))}
+                </ul>
+              )}
+            </IonText>
+          </ul>
+
+          {/* {console.log(currentUser.user_data.preferences)} */}
+        </IonText>
+      </div>
+      <TabNavigationBottom></TabNavigationBottom>
+    </IonPage>
+  );
+};
+export default Profile;

@@ -1,0 +1,7 @@
+{
+  "name": "food-pantry",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

@@ -1,0 +1,115 @@
+.main_grid {
+  --ion-grid-padding: 0;
+}
+.col_zero_p_left {
+  padding-left: 0%;
+}
+.promo_img {
+  margin-top: 1rem;
+  padding-right: 1rem;
+  height: 80vh;
+}
+
+/* Title animation  start*/
+.title {
+  height: max-content;
+  width: 100%;
+  font-size: var(--text-font-size-xl);
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  text-align: start;
+}
+
+.title span {
+  position: relative;
+  opacity: 0;
+  animation: dropIn-text 1.5s forwards;
+}
+
+.title span:nth-child(1n) {
+  animation-delay: 0.9s;
+}
+.title span:nth-child(2n) {
+  animation-delay: 1.1s;
+}
+.title span:nth-child(3n) {
+  animation-delay: 1.2s;
+}
+.title span:nth-child(4n) {
+  animation-delay: 1.3s;
+}
+.title span:nth-child(5n) {
+  animation-delay: 1.4s;
+}
+.title span:nth-child(6n) {
+  animation-delay: 1.5s;
+}
+.title span:nth-child(7n) {
+  animation-delay: 1.6s;
+}
+.title span:nth-child(8n) {
+  animation-delay: 1.7s;
+}
+.title span:nth-child(9n) {
+  animation-delay: 1.8s;
+}
+.title span:nth-child(10n) {
+  animation-delay: 1.9s;
+}
+
+@keyframes dropIn-text {
+  0% {
+    right: -10em;
+    opacity: 1;
+  }
+  50% {
+    right: 1em;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+/* title aniiamtion end */
+
+.subtitle {
+  letter-spacing: 0.25rem;
+}
+
+@media (max-width: 991px) {
+  .promo_img {
+    height: 55vh;
+  }
+  .title {
+    width: 80%;
+    margin: auto;
+    letter-spacing: 0.25rem;
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .subtitle {
+    text-align: center;
+  }
+}
+
+@media (max-width: 539px) {
+  .promo_img {
+    height: 55vh;
+    max-width: 100vw;
+    width: max-content;
+  }
+}
+
+.test {
+  background-color: aquamarine;
+}
+.test_1 {
+  background-color: rgb(42, 6, 6);
+}
+.test_2 {
+  background-color: rgb(175, 129, 36);
+}
+.test_3 {
+  background-color: rgb(60, 48, 78);
+}

@@ -1,0 +1,71 @@
+html,
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* center maximum edition */
+.center {
+  margin: auto;
+  justify-content: center;
+  justify-self: center;
+  align-content: center;
+  text-align: center;
+}
+
+.text-xl {
+  font-size: var(--text-font-size-xl);
+}
+
+.text-lg {
+  font-size: var(--text-font-size-lg);
+}
+
+.text-md-minus {
+  font-size: var(--text-font-size-md-minus);
+}
+
+.text-md-plus {
+  font-size: var(--text-font-size-md-plus);
+}
+
+.text-md {
+  font-size: var(--text-font-size-md);
+}
+
+.text-sm {
+  font-size: var(--text-font-size-sm);
+}
+
+.text-heavy {
+  font-weight: var(--text-font-weight-heavy);
+}
+
+.text-mild {
+  font-weight: var(--text-font-weight-mild);
+}
+
+.text-dark {
+  color: var(--ion-color-primary-contrast);
+}
+
+.text-light {
+  color: var(--ion-color-tertiary-contrast);
+}
+
+.danger_text {
+  color: var(--ion-color-danger);
+}
+
+.success_text {
+  color: var(--ion-color-tertiary);
+}
+/* The fuck was I working on here? */
+/* 
+ion-icon {
+  color: var(--ion-color-primary);
+} */
+
+.pantry-btton {
+  color: #ffffff;
+}

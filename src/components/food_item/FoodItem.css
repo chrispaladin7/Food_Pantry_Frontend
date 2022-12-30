@@ -1,0 +1,23 @@
+.item_title {
+    padding: 0 0 0 0.5rem;
+    margin-left: 0;
+}
+
+.item_details {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.item_details > div {
+    padding: 0 0.5rem  0 0.5rem;
+}
+
+.item_allergens {
+    display: flex;
+    justify-content: start;
+    padding: 0.5rem 0 0.5rem 0;
+}
+.item_allergens > p {
+    padding-left: 0.5rem;
+}

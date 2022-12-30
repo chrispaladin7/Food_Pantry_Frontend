@@ -1,0 +1,193 @@
+/* Profile Title */
+.profile_top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile_title {
+
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.profile_edit_button {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.profile_title_text h1 {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: 160px;
+  margin: auto;
+  white-space: nowrap;
+  padding-bottom: 13px;
+}
+
+.profile_title_text h1:before {
+  background-color: var(--ion-color-primary);
+  content: '';
+  display: block;
+  height: 3px;
+  width: 75px;
+  margin-bottom: 5px;
+}
+
+/* Secttion Title */
+.section_title_div {
+  margin-top: 1rem;
+}
+
+.section_title {
+  margin-top: 1rem;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.section_title:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 55px;
+  background-color: var(--ion-color-primary);
+}
+
+.section_title:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  height: 1px;
+  width: 100%;
+  max-width: 355px;
+  background-color: var(--ion-color-primary);
+}
+
+/* Vale Fields Lable */
+.label_div .label {
+  text-transform: capitalize;
+}
+
+.label_div .label:after {
+  width: 100%;
+  height: 2px;
+  display: block;
+  content: "";
+  position: relative;
+  margin-top: 5px;
+  background-color: var(--ion-color-primary);
+}
+
+/* ____________________________________________ */
+
+
+/* ____________________________________________ */
+
+/* Grid Config */
+.profile_grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 10px;
+  row-gap: 1em;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  width: 70%;
+  margin: auto;
+}
+
+
+
+/* _________________________________________________________ Checkbox Syles _________________________________________________________ */
+
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: 0;
+  opacity: 0.01;
+}
+
+[type="checkbox"]:not(:checked)+label,
+[type="checkbox"]:checked+label {
+  position: relative;
+  padding-left: 2.3em;
+  font-size: 16px;
+  white-space: nowrap;
+  line-height: 1.7;
+  cursor: pointer;
+  width: min-content;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked)+label:before,
+[type="checkbox"]:checked+label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.4em;
+  height: 1.4em;
+  border: 1px solid #aaa;
+  background: #FFF;
+  border-radius: .2em;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, .1), 0 0 0 #ff7e3878;
+  -webkit-transition: all .275s;
+  transition: all .275s;
+}
+
+/* checked mark aspect */
+[type="checkbox"]:not(:checked)+label:after,
+[type="checkbox"]:checked+label:after {
+  content: '✕';
+  position: absolute;
+  top: .525em;
+  left: 0.105em;
+  font-size: 1.475em;
+  color: #FF7E38;
+  line-height: 0;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked)+label:after {
+  opacity: 0;
+  -webkit-transform: scale(0) rotate(45deg);
+  transform: scale(0) rotate(45deg);
+}
+
+[type="checkbox"]:checked+label:after {
+  opacity: 1;
+  -webkit-transform: scale(1) rotate(0);
+  transform: scale(1) rotate(0);
+}
+
+/* Disabled checkbox */
+[type="checkbox"]:disabled:not(:checked)+label:before,
+[type="checkbox"]:disabled:checked+label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #e9e9e9;
+}
+
+[type="checkbox"]:disabled:checked+label:after {
+  color: #FF7E38;
+}
+
+[type="checkbox"]:disabled+label {
+  color: #FFF;
+}
+
+/* Accessibility */
+[type="checkbox"]:checked:focus+label:before,
+[type="checkbox"]:not(:checked):focus+label:before {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, .1), 0 0 0 6px #ff7e3876;
+}

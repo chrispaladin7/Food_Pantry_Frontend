@@ -1,0 +1,46 @@
+.card_style {
+}
+
+.padding_left_0 {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.card_section {
+    color: var(--ion-color-light);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    padding-bottom: 25px;
+    padding-top: 0;
+}
+
+.curve {
+    position: absolute;
+    height: 200px;
+    width: 280%;
+    bottom: 0;
+
+}
+
+.curve::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 80%;
+    width: 55%;
+    height: 100%;
+    background-color: #da5107;
+    transform: translate(-20%, 85%);  
+} 
+
+.upper-block {
+    background-color: #FFB60C; 
+}
+
+.lower-block {
+    background-color: #da5107;
+}
+.z_up {
+    z-index: 2;}

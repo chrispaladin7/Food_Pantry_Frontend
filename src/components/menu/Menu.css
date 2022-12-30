@@ -1,0 +1,11 @@
+.logo {
+  width: 10rem;
+  height: max-content;
+  margin: 1rem auto 0.6rem 1rem;
+}
+
+.menuButton {
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  padding-right: 0;
+}
