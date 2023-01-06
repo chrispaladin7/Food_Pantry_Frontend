@@ -14,7 +14,7 @@ example  wrokflow for dev.
     
 git init
     
-git remote add origin https://github.com/Aleksandar-Evgeniy-Kamenev/food-pantry.git
+git remote add origin https://github.com/chrispaladin7/Food_Pantry_Frontend.git
     
 git pull origin main
 
