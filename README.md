@@ -1,3 +1,6 @@
+This is the frontend of my team final Project from Pace Fall 2022, to demonstrate what we learnt over the course.
+Date: Jan 2022 - Dec 2022
+
 # Food-pantry
 
 ## Steps to work on this project
